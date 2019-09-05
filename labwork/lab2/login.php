@@ -14,6 +14,8 @@
             <input type="password" name="password" id="password" required>
             
             <button>Log In!</button>
+            
+            <p><a href="register.php">Register here!</a></p>
         </form>
     </body>
 </html>
