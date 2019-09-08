@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vote for Kal-El</title>
+        <style>
+            body {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Vote For Kal-El</h1>
+        <form action="process_contact.php" method="POST">
+            
+            <label>First Name;</label>
+            <input type="text" name="firstname" id="firstname" required/>
+            
+            <label>Last Name;</label>
+            <input type="text" name="lastname" id="lastname" required/>
+            
+            <label>Email Address;</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label>Gender;</label>
+            <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefer not to say">Prefer Not To Say</option>
+            </select>
+            
+            <label>Age;</label>
+            <select name="agerange" required>
+            <option value="12-20">12-20</option>
+            <option value="21-29">21-29</option>
+            <option value="30-38">30-38</option>
+            <option value="39-47">39-47</option>
+            <option value="48+">48+</option>
+            </select>
+            
+            <label name="interestss">Interests;</label>
+            <input type="checkbox" name="interest1" value="color blue">Color Blue<br>
+            <input type="checkbox" name="interest2" value="color red">Color Red<br>
+            <input type="checkbox" name="interest3" value="krypton">Krypton<br>
+            <input type="checkbox" name="interest4" value="justice"> Justice<br>
+            <input type="checkbox" name="interest5" value="lois lane">Lois Lane<br>
+            <input type="checkbox" name="interest6" value="kent family"> Kent Family<br>
+            
+            <label>Monitary Contribution; $</label>
+            <input type="number" name="quantity" min="0" max="100">
+            <br>
+            <label>
+	        <input type="checkbox" name="subscribe" value="1" />
+	        Sign-up to our mailing-list!
+            </label>
+            
+            <br>
+            
+            <label>Comments;</label>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
