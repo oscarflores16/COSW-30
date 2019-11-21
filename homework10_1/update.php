@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password   = $_POST['password'];
     // Validate the inputs (check if they're empty)
     $errors=[];
-    if (failed condition){
+    if (failedcondition){
         $errors[] ='Error message';
     }
     // If they aren't empty, create and run your query
